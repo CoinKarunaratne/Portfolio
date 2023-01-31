@@ -24,7 +24,7 @@ export default function NavBar() {
           className="font-normal cursor-pointer text-[16px] text-white mr-10"
         >
           <a
-            href="https://www.google.com/"
+            href="#home"
             className="text-white font-semibold text-lg m-2 text-center"
           >
             Home
@@ -39,7 +39,7 @@ export default function NavBar() {
           className="font-normal cursor-pointer text-[16px] text-white mr-10"
         >
           <a
-            href="https://www.google.com/"
+            href="#skills"
             className="text-white font-semibold text-lg m-2 text-center"
           >
             Skills
@@ -54,7 +54,7 @@ export default function NavBar() {
           className="font-normal cursor-pointer text-[16px] text-white mr-10"
         >
           <a
-            href="https://www.google.com/"
+            href="#projects"
             className="text-white font-semibold text-lg m-2 text-center"
           >
             Projects
@@ -91,7 +91,7 @@ export default function NavBar() {
               className="font-normal cursor-pointer text-[16px] text-white mb-10"
             >
               <a
-                href="https://www.google.com/"
+                href="#home"
                 className="text-white font-semibold text-lg m-2 text-center"
               >
                 Home
@@ -103,7 +103,7 @@ export default function NavBar() {
               className="font-normal cursor-pointer text-[16px] text-white mb-10"
             >
               <a
-                href="https://www.google.com/"
+                href="#skills"
                 className="text-white font-semibold text-lg m-2 text-center"
               >
                 Skills
@@ -115,7 +115,7 @@ export default function NavBar() {
               className="font-normal cursor-pointer text-[16px] text-white mb-10"
             >
               <a
-                href="https://www.google.com/"
+                href="#projects"
                 className="text-white font-semibold text-lg m-2 text-center"
               >
                 Projects
