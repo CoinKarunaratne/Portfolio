@@ -43,7 +43,7 @@ export default function () {
           initial={{ scale: 0 }}
           transition={{
             delay: 0.5,
-            duration: 2,
+            duration: 1,
             type: "spring",
           }}
         >
