@@ -13,10 +13,14 @@ export default function projects() {
           Projects
         </h1>
         <p className="py-[20px] sm:px-[150px] text-[#B8B8B8] tracking-[0.8px] font-semibold text-[20px]">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-          vero dignissimos nisi. Nobis iste laboriosam voluptates ex, assumenda
-          incidunt ullam inventore accusamus unde nemo blanditiis vero impedit
-          odio eligendi facilis!
+          In this section, you'll find a selection of my most notable projects
+          that demonstrate my skills and expertise as a developer. Each project
+          showcases my ability to create innovative and effective solutions.
+          Whether you're interested in the technology I used, the design, or the
+          overall user experience, I believe you'll find something here that
+          will pique your interest. Browse through the projects and feel free to
+          reach out to me if you have any questions or would like to learn more
+          about my work.
         </p>
         <div className="grid grid-cols-2 justify-center divide-x-2 w-[400px] text-[20px] font-bold text-white sm:w-[600px] mx-auto my-[20px] rounded-[80px] border-2 border-solid border-white">
           <button
@@ -44,10 +48,11 @@ export default function projects() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 px-[100px] py-[50px] gap-x-4 gap-y-8">
         {projects === "web2" &&
-          web2.map((item) => {
+          web2.map((item, index) => {
             return (
               <a
                 id="card"
+                key={index}
                 href={item.Link}
                 className="relative overflow-hidden"
               >
@@ -67,6 +72,7 @@ export default function projects() {
                     {item.Techs.map((item) => {
                       return (
                         <img
+                          key={item}
                           src={`/${item}.png`}
                           alt=""
                           className="object-cover rounded-[10px] self-center"

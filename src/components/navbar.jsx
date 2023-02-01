@@ -5,6 +5,11 @@ import { navVariants } from "../utils/motion";
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
 
+  const handleClick = () => {
+    const targetElement = document.getElementById("newsletter");
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <motion.nav
       variants={navVariants}
@@ -61,9 +66,15 @@ export default function NavBar() {
           </a>
         </motion.li>
       </ul>
-      <button id="nav-btn" className="sm:flex hidden">
+      <motion.button
+        whileTap={{ scale: 0.7 }}
+        initial={{ scale: 1 }}
+        id="nav-btn"
+        className="sm:flex hidden"
+        onClick={handleClick}
+      >
         Let's Connect
-      </button>
+      </motion.button>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <motion.img

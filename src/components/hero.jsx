@@ -1,6 +1,7 @@
 import Spline from "@splinetool/react-spline";
 import { useState, useEffect } from "react";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
@@ -38,6 +39,11 @@ export default function Hero() {
     }
   };
 
+  const handleClick = () => {
+    const targetElement = document.getElementById("contact");
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="home">
       <div className="flex flex-col lg:flex-row">
@@ -53,17 +59,25 @@ export default function Hero() {
             </span>
           </h1>
           <p className="text-[#B8B8B8] text-[18px] tracking-[0.8px] w-[96%]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-            perferendis architecto corrupti illo eligendi vel tempore, nostrum
-            explicabo ea, atque in modi quaerat, voluptatum voluptatem quia.
-            Magni eveniet tempora assumenda.
+            As a driven and highly motivated software developer, I am dedicated
+            to creating innovative and effective solutions for a variety of
+            challenges.My passion for coding and problem-solving drives me to
+            continuously improve and expand my knowledge, and I am excited to
+            bring my expertise and enthusiasm to new and exciting projects.
+            Let's create something great together.
           </p>
-          <button className="text-white font-bold text-[20px] mt-[60px] flex gap-4">
+          <motion.button
+            whileHover={{ x: 30 }}
+            whileTap={{ scale: 0.7 }}
+            initial={{ scale: 1 }}
+            className="text-white font-bold text-[20px] mt-[60px] flex gap-4"
+            onClick={handleClick}
+          >
             Let's Connect
             <span>
               <ArrowRightCircle className="mt-2" />
             </span>
-          </button>
+          </motion.button>
         </div>
         <div className="scale-[0.6] sm:scale-100 mr-[500px] sm:mr-0 md:pt-[100px]">
           <Spline scene="https://prod.spline.design/luG2LYbF43qgQCi1/scene.splinecode" />

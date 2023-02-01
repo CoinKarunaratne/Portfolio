@@ -43,9 +43,12 @@ export default function skills() {
           autoPlay={true}
           autoPlaySpeed={3000}
         >
-          {Stack.map((element) => {
+          {Stack.map((element, index) => {
             return (
-              <div className="flex flex-col justify-center text-center">
+              <div
+                key={index}
+                className="flex flex-col justify-center text-center"
+              >
                 <img
                   className="sm:h-[100px] sm:w-[100px] h-[50px] w-[50px] object-cover self-center"
                   src={element.ImgUrl}
