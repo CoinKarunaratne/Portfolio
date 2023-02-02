@@ -22,7 +22,7 @@ export default function projects() {
           reach out to me if you have any questions or would like to learn more
           about my work.
         </p>
-        <div className="grid grid-cols-2 justify-center divide-x-2 w-[400px] text-[20px] font-bold text-white sm:w-[600px] mx-auto my-[20px] rounded-[80px] border-2 border-solid border-white">
+        <div className="grid grid-cols-2 justify-center divide-x-2 md:w-[600px] text-[20px] font-bold text-white sm:w-[400px] mx-auto my-[20px] rounded-[80px] border-2 border-solid border-white">
           <button
             type="button"
             onClick={() => setProjects("web2")}
