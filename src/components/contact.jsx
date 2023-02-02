@@ -42,7 +42,6 @@ export default function () {
           whileInView={{ scale: 1 }}
           initial={{ scale: 0 }}
           transition={{
-            delay: 0.5,
             duration: 1,
             type: "spring",
           }}
