@@ -29,10 +29,10 @@ export default function skills() {
         className="p-[20px] pb-[50px] sm:px-[100px] sm:pb-[60px] w-auto mx-[20px] sm:mx-[100px] bg-gradient-to-r from-[#380036] to-[#0CBABA] rounded-[64px]"
       >
         <div className="flex flex-col text-center gap-4 mt-5 mb-10">
-          <h1 className="text-[45px] tracking-[0.8px] font-bold text-white">
+          <h1 className="text-[35px] md:text-[45px] tracking-[0.8px] font-bold text-white">
             Skills
           </h1>
-          <p className="text-[#B8B8B8] tracking-[0.8px] font-semibold text-[20px]">
+          <p className="text-[#B8B8B8] tracking-[0.8px] font-semibold text-[18px]">
             I can bring these tech stacks for your next projects.
           </p>
         </div>

@@ -12,7 +12,7 @@ export default function projects() {
         <h1 className="py-[20px] text-[45px] tracking-[0.8px] font-bold text-white">
           Projects
         </h1>
-        <p className="py-[20px] sm:px-[150px] text-[#B8B8B8] tracking-[0.8px] font-semibold text-[20px]">
+        <p className="py-[20px] sm:px-[150px] text-[#B8B8B8] tracking-[0.8px] font-semibold text-[18px] md:text-[20px]">
           In this section, you'll find a selection of my most notable projects
           that demonstrate my skills and expertise as a developer. Each project
           showcases my ability to create innovative and effective solutions.
