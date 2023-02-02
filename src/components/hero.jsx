@@ -47,15 +47,18 @@ export default function Hero() {
   return (
     <section id="home">
       <div className="flex flex-col lg:flex-row">
-        <div className="mt-0 pt-[150px] pb-[100px] px-[40px] md:pl-[80px] ml-10 md:ml-0">
+        <div className="mt-0 pt-[150px] pb-[100px] px-[40px] md:pl-[80px] ml-7 md:ml-0">
           <span className="tracking-[0.8px] text-white py-[8px] px-[10px] font-bold bg-gradient-to-r from-pink-500 to-blue-500 border-2 border-solid border-white text-[20px] mb-[16px] inline-block">
             {" "}
             Welcome to My Portfolio
           </span>
           <h1 className="text-white text-[65px] tracking-[0.8px] py-[10px] font-bold mb-[20px] block">
             {`Hi I'm a `}
-            <span className="border-r-[1px] border-solid border-zinc-200">
+            <span className="border-r-[1px] border-solid border-zinc-200 hidden md:inline-block">
               {text}
+            </span>
+            <span className="border-solid border-zinc-200 md:hidden block">
+              Full Stack Developer
             </span>
           </h1>
           <p className="text-[#B8B8B8] text-[18px] tracking-[0.8px] w-[96%]">

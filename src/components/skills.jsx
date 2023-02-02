@@ -39,6 +39,7 @@ export default function skills() {
 
         <Carousel
           responsive={responsive}
+          swipeable={true}
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={3000}

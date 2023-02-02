@@ -22,7 +22,7 @@ export default function projects() {
           reach out to me if you have any questions or would like to learn more
           about my work.
         </p>
-        <div className="grid grid-cols-2 self-center divide-x-2 md:w-[600px] w-[400px] text-[20px] font-bold text-white my-[20px] rounded-[80px] border-2 border-solid border-white">
+        <div className="grid grid-cols-2 self-center divide-x-2 md:w-[600px] w-[300px] text-[20px] font-bold text-white my-[20px] rounded-[80px] border-2 border-solid border-white">
           <button
             type="button"
             onClick={() => setProjects("web2")}
@@ -63,7 +63,7 @@ export default function projects() {
                 />
                 <div
                   id="card-body"
-                  className="w-full h-full backdrop-blur-[5px] bg-blue-400 bg-opacity-40 flex justify-center align-middle rounded-[25px] absolute top-[100%]"
+                  className="w-full h-full backdrop-blur-[5px] bg-blue-400 bg-opacity-40 md:flex justify-center align-middle rounded-[25px] absolute top-[100%] hidden"
                 >
                   <div className="grid grid-cols-5 gap-4 p-5">
                     {item.Techs.map((item) => {

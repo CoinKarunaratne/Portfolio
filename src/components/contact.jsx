@@ -38,7 +38,7 @@ export default function () {
         className="flex flex-col md:flex-row p-[40px] mb-0 lg:mb-[50px] relative z-0"
       >
         <motion.div
-          className="flex-shrink p-[40px]"
+          className="flex-shrink p-[40px] hidden md:block"
           whileInView={{ scale: 1 }}
           initial={{ scale: 0 }}
           transition={{
@@ -48,6 +48,9 @@ export default function () {
         >
           <img src="/contact-img.svg" alt="" className="shrink" />
         </motion.div>
+        <div className="flex-shrink p-[40px] md:hidden block">
+          <img src="/contact-img.svg" alt="" className="shrink" />
+        </div>
         <div className="flex flex-col grow md:p-[40px] gap-[20px] sm:pl-0">
           <h1 className="text-white font-bold leading-[0.8] text-[45px] mb-4">
             Get In Touch

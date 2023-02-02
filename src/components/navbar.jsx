@@ -15,6 +15,7 @@ export default function NavBar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
+      media={{ minWidth: 768 }}
       className="w-full flex px-[5%] py-6 justify-between items-center navbar relative z-20"
     >
       <div className="absolute w-[35%] h-[10%] inset-0 gradient-01" />
