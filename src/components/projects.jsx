@@ -65,7 +65,7 @@ export default function projects() {
                   id="card-body"
                   className="flex-col w-full h-full backdrop-blur-[5px] bg-blue-400 bg-opacity-40 flex justify-center align-middle rounded-[25px] absolute top-[100%]"
                 >
-                  <h1 className="font-bold text-white m-auto opacity-100 leading-[0.8] text-[24px] bg-gradient-to-r from-lime-500 to-sky-500 p-[10px] rounded-[5px]">
+                  <h1 className="font-bold text-white m-auto opacity-100 leading-[0.8] sm:text-[18px] md:text-[24px] bg-gradient-to-r from-lime-500 to-sky-500 p-[10px] rounded-[5px]">
                     This is a {item.Type} website.
                   </h1>
                   <div className="grid grid-cols-5 gap-4 p-5">

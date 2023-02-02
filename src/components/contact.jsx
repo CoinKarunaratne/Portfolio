@@ -48,14 +48,14 @@ export default function () {
         >
           <img src="/contact-img.svg" alt="" className="shrink" />
         </motion.div>
-        <div className="flex flex-col grow p-[40px] gap-[20px]">
+        <div className="flex flex-col grow md:p-[40px] gap-[20px] sm:pl-0">
           <h1 className="text-white font-bold leading-[0.8] text-[45px]">
             Get In Touch
           </h1>
           <form
             action=""
             onSubmit={handleChange}
-            className="grow grid gap-4 grid-cols-1 grid-rows-5 sm:grid-cols-2 py-[40px]"
+            className="grow grid gap-4 grid-cols-1 grid-rows-5 md:grid-cols-2 py-[40px]"
           >
             <input
               type="text"

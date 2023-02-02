@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <section id="home">
       <div className="flex flex-col lg:flex-row">
-        <div className="mt-0 pt-[150px] pb-[100px] pl-[80px]">
+        <div className="mt-0 pt-[150px] pb-[100px] md:pl-[80px]">
           <span className="tracking-[0.8px] text-white py-[8px] px-[10px] font-bold bg-gradient-to-r from-pink-500 to-blue-500 border-2 border-solid border-white text-[20px] mb-[16px] inline-block">
             {" "}
             Welcome to My Portfolio
@@ -79,7 +79,7 @@ export default function Hero() {
             </span>
           </motion.button>
         </div>
-        <div className="scale-[0.6] sm:scale-100 mr-[500px] sm:mr-0 md:pt-[100px]">
+        <div className="scale-[0.6] md:scale-100 mr-[500px] sm:mr-0 md:pt-[100px]">
           <Spline scene="https://prod.spline.design/luG2LYbF43qgQCi1/scene.splinecode" />
         </div>
       </div>
