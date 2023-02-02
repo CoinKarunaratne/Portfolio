@@ -78,11 +78,7 @@ export default function NavBar() {
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <motion.img
-          whileHover={{
-            scale: 1.2,
-            transition: { duration: 0.2 },
-          }}
-          whileTap={{ scale: 0.9 }}
+          whileTap={{ scale: 0.7 }}
           src="/menu.svg"
           className="cursor-pointer"
           onClick={() => setToggle((prev) => !prev)}

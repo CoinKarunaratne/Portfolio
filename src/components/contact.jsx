@@ -55,7 +55,7 @@ export default function () {
           <form
             action=""
             onSubmit={handleChange}
-            className="grow grid gap-4 sm:grid-cols-1 grid-rows-5 md:grid-cols-2 md:py-[40px]"
+            className="grid gap-4 sm:grid-cols-1 grid-rows-6 md:grid-cols-2 py-[20px]"
           >
             <input
               type="text"
@@ -94,7 +94,7 @@ export default function () {
               name="message"
               value={details.message}
               onChange={changeDetails}
-              className="bg-opacity-10 rounded-lg bg-slate-600 row-span-3 col-span-2 border-slate-500 border-solid border-2 px-5 py-7 text-white"
+              className="bg-opacity-10 rounded-lg bg-slate-600 row-span-3 md:col-span-2 border-slate-500 border-solid border-2 px-5 py-7 text-white"
               placeholder="Message"
             />
             <motion.button
