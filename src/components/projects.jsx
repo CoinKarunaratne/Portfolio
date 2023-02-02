@@ -22,7 +22,7 @@ export default function projects() {
           reach out to me if you have any questions or would like to learn more
           about my work.
         </p>
-        <div className="grid grid-cols-2 justify-center divide-x-2 md:w-[600px] text-[20px] font-bold text-white sm:w-[400px] mx-auto my-[20px] rounded-[80px] border-2 border-solid border-white">
+        <div className="grid grid-cols-2 justify-center divide-x-2 md:w-[600px] w-[400px] text-[20px] font-bold text-white mx-auto my-[20px] rounded-[80px] border-2 border-solid border-white">
           <button
             type="button"
             onClick={() => setProjects("web2")}
@@ -46,7 +46,7 @@ export default function projects() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-3 px-[100px] py-[50px] gap-x-4 gap-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 px-[100px] py-[50px] gap-x-4 gap-y-8">
         {projects === "web2" &&
           web2.map((item, index) => {
             return (

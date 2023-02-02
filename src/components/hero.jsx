@@ -79,7 +79,7 @@ export default function Hero() {
             </span>
           </motion.button>
         </div>
-        <div className="scale-[0.5] self-start md:scale-100 mr-[500px] sm:mr-0 md:pt-[100px]">
+        <div className="scale-[0.5] md:scale-100 mr-[500px] sm:mr-0 md:pt-[100px]">
           <Spline scene="https://prod.spline.design/luG2LYbF43qgQCi1/scene.splinecode" />
         </div>
       </div>
