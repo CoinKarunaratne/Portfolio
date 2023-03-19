@@ -13,6 +13,7 @@ function App() {
     <div className="bg-[#1A232E] overflow-hidden">
       <Navbar />;
       <Hero />
+      <Skills />
       <Projects />
       <Contact />
       <Newsletter />
