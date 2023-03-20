@@ -82,8 +82,14 @@ export default function Hero() {
             </span>
           </motion.button>
         </div>
-        <div className="scale-[0.5] md:scale-100 mr-[500px] sm:mr-0 md:pt-[100px] hidden md:block">
-          <Spline scene="https://prod.spline.design/HM-epi3h8pkjFmAj/scene.splinecode" />
+        <div
+          style={{ touchAction: "pan-y" }}
+          className="scale-[0.5] md:scale-100 mr-[500px] sm:mr-0 md:pt-[100px] hidden md:block"
+        >
+          <Spline
+            style={{ touchAction: "pan-y" }}
+            scene="https://prod.spline.design/HM-epi3h8pkjFmAj/scene.splinecode"
+          />
         </div>
         <div className="md:hidden block">
           <img src="/3D Image.png" alt="3D-Image" />

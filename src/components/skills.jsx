@@ -1,6 +1,18 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Stack from "../utils/tech-stacks";
+import Css3 from "../svgComponents/Css3";
+import Html5 from "../svgComponents/Html5";
+import Express from "../svgComponents/Express";
+import Firebase from "../svgComponents/Firebase";
+import GithubIcon from "../svgComponents/GithubIcon";
+import Javascript from "../svgComponents/Javascript";
+import MongodbIcon from "../svgComponents/MongodbIcon";
+import NextjsIcon from "../svgComponents/NextjsIcon";
+import Nodejs from "../svgComponents/Nodejs";
+import Postgresql from "../svgComponents/Postgresql";
+import Prisma from "../svgComponents/Prisma";
+import React from "../svgComponents/React";
+import Redux from "../svgComponents/Redux";
+import TailwindcssIcon from "../svgComponents/TailwindcssIcon";
+import TypescriptIcon from "../svgComponents/TypescriptIcon";
 
 export default function skills() {
   const responsive = {
@@ -26,42 +38,33 @@ export default function skills() {
     <section id="skills" className="mt-[100px] relative z-10">
       <div
         id="carousel"
-        className="p-[20px] pb-[50px] sm:px-[100px] sm:pb-[60px] w-auto mx-[20px] sm:mx-[100px] bg-gradient-to-r from-[#380036] to-[#0CBABA] rounded-[64px]"
+        className="p-[20px] pb-[50px] sm:px-[100px] sm:pb-[60px] w-auto mx-[20px] sm:mx-[100px] bg-gradient-to-r from-[#99ba67] to-[#5fb0b0] rounded-[64px]"
       >
         <div className="flex flex-col text-center gap-4 mt-5 mb-10">
-          <h1 className="text-[35px] md:text-[45px] tracking-[0.8px] font-bold text-white">
+          <h1 className="text-[35px] md:text-[45px] tracking-[0.8px] font-bold text-slate-700">
             Skills
           </h1>
-          <p className="text-[#B8B8B8] tracking-[0.8px] font-semibold text-[18px]">
+          <p className="text-slate-600 tracking-[0.8px] font-semibold text-[18px]">
             I can bring these tech stacks for your next projects.
           </p>
         </div>
-
-        <Carousel
-          responsive={responsive}
-          swipeable={true}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={3000}
-        >
-          {Stack.map((element, index) => {
-            return (
-              <div
-                key={index}
-                className="flex flex-col justify-center text-center"
-              >
-                <img
-                  className="sm:h-[100px] sm:w-[100px] h-[50px] w-[50px] object-cover self-center"
-                  src={element.ImgUrl}
-                  alt={element.Name}
-                />
-                <h1 className="text-white font-bold mt-[20px]">
-                  {element.Name}
-                </h1>
-              </div>
-            );
-          })}
-        </Carousel>
+        <div className="flex flex-wrap justify-center gap-7">
+          <Html5 />
+          <Css3 />
+          <TypescriptIcon />
+          <Firebase />
+          <GithubIcon />
+          <Javascript />
+          <MongodbIcon />
+          <NextjsIcon />
+          <Nodejs />
+          <Postgresql />
+          <Prisma />
+          <React />
+          <Redux />
+          <TailwindcssIcon />
+          <Express />
+        </div>
       </div>
     </section>
   );

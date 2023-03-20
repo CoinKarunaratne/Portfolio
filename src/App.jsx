@@ -11,7 +11,7 @@ import "./App.css";
 function App() {
   return (
     <div className="bg-[#1A232E] overflow-hidden">
-      <Navbar />;
+      <Navbar />
       <Hero />
       <Skills />
       <Projects />

@@ -1,5 +1,6 @@
 import { web2 } from "../utils/projects";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function projects() {
   const [projects, setProjects] = useState("web2");
@@ -50,10 +51,14 @@ export default function projects() {
         {projects === "web2" &&
           web2.map((item, index) => {
             return (
-              <a
+              <motion.a
                 id="card"
                 key={index}
                 href={item.Link}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                whileTap={{ scale: 0.8 }}
+                transition={{ duration: 0.3, delay: index * 0.2 }}
                 className="relative overflow-hidden"
               >
                 <img
@@ -63,22 +68,20 @@ export default function projects() {
                 />
                 <div
                   id="card-body"
-                  className="w-full h-full backdrop-blur-[5px] bg-blue-400 bg-opacity-40 md:flex justify-center align-middle rounded-[25px] absolute top-[100%] hidden"
+                  className="w-full h-full backdrop-blur-[5px] bg-blue-400 bg-opacity-40 md:flex flex-col justify-center align-middle rounded-[25px] absolute top-[100%] hidden"
                 >
-                  <div className="grid grid-cols-5 gap-4 p-5">
-                    {item.Techs.map((item) => {
-                      return (
-                        <img
-                          key={item}
-                          src={`/${item}.png`}
-                          alt=""
-                          className="object-cover rounded-[10px] self-center"
-                        />
-                      );
-                    })}
+                  <h1 className="self-center p-2 lg:p-7 text-sm lg:text-lg font-semibold">
+                    {item.Description}
+                  </h1>
+                  <div className="flex justify-end">
+                    <a href={item.Github}>
+                      <button className="bg-green-600 p-2 mr-5 rounded-lg text-white text-sm lg:text-base">
+                        Source Code
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </a>
+              </motion.a>
             );
           })}
       </div>
