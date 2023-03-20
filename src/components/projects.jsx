@@ -51,14 +51,11 @@ export default function projects() {
         {projects === "web2" &&
           web2.map((item, index) => {
             return (
-              <a
+              <motion.a
                 id="card"
                 key={index}
                 href={item.Link}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
                 whileTap={{ scale: 0.8 }}
-                transition={{ duration: 0.3, delay: index * 0.2 }}
                 className="relative overflow-hidden"
               >
                 <img
@@ -81,7 +78,7 @@ export default function projects() {
                     </a>
                   </div>
                 </div>
-              </a>
+              </motion.a>
             );
           })}
       </div>
