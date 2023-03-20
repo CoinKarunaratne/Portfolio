@@ -51,7 +51,7 @@ export default function projects() {
         {projects === "web2" &&
           web2.map((item, index) => {
             return (
-              <motion.a
+              <a
                 id="card"
                 key={index}
                 href={item.Link}
@@ -81,7 +81,7 @@ export default function projects() {
                     </a>
                   </div>
                 </div>
-              </motion.a>
+              </a>
             );
           })}
       </div>
