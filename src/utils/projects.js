@@ -8,7 +8,7 @@ const web2 = [
   },
   {
     Name: "Conversate",
-    Link: "https://metaverse-two-drab.vercel.app/",
+    Link: "https://conversate-18ca4.web.app/",
     Image: "/projects/Conversate.png",
     Description:
       "A chat application that enables users to send and receive text messages and images seamlessly",
@@ -16,14 +16,14 @@ const web2 = [
   },
   {
     Name: "WheelDeal",
-    Link: "https://metaverse-two-drab.vercel.app/",
+    Link: "https://admin-frontend-r5zv.onrender.com/",
     Image: "/projects/WheelDeal.png",
     Description: "An auto-selling app with a social media interface. ",
     Github: "https://github.com/CoinKarunaratne/WheelDeal",
   },
   {
     Name: "KiwiKapers",
-    Link: "https://metaverse-two-drab.vercel.app/",
+    Link: "https://kiwikapers.vercel.app/",
     Image: "/projects/KiwiKapers.png",
     Description:
       "This website provides information about events happening in New Zealand.",
