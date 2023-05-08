@@ -2,7 +2,7 @@ import { web2 } from "../utils/projects";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function projects() {
+export default function Projects() {
   const [projects, setProjects] = useState("web2");
   return (
     <section

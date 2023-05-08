@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-export default function ({ onValidated, status, message }) {
+export default function Mailchimp({ onValidated, status, message }) {
   const [email, setEmail] = useState("");
 
   useEffect(() => {

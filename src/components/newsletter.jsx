@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Mailchimp from "./mailchimp";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-export default function () {
+export default function Newsletter() {
   const postUrl = `https://gmail.us12.list-manage.com/subscribe/post?u=6b4f825f73669a433b4c2a6e7&amp;id=43cde1e72e&amp;f_id=00d2b8e0f0`;
 
   return (

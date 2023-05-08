@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function () {
+export default function Footer() {
   return (
     <section id="footer" className="bg-black relative z-0 h-[400px] w-full">
       <div className="flex h-full w-full justify-between">

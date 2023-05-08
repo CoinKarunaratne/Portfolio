@@ -14,7 +14,7 @@ import Redux from "../svgComponents/Redux";
 import TailwindcssIcon from "../svgComponents/TailwindcssIcon";
 import TypescriptIcon from "../svgComponents/TypescriptIcon";
 
-export default function skills() {
+export default function Skills() {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
